@@ -451,3 +451,102 @@ header.sticky {
 .social i:hover {
 	color: var(--main-color);
 }
+
+.details {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 3rem;
+}
+
+.main-d a {
+	display: flex;
+	align-items: center;
+	color: var(--text-color);
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.main-d i {
+	vertical-align: middle;
+	margin-right: 12px;
+	font-size: 28px;
+	color: var(--main-color);
+}
+
+.scroll {
+	position: fixed;
+	bottom: 2.2rem;
+	border-top: 2rem;
+	right: 3.2rem;
+}
+
+.scroll i {
+	font-size: 22px;
+	color: var(--text-color);
+	background-color: var(--main-color);
+	padding: 10px;
+	border-radius: 2rem;
+}
+
+@media (max-width: 1545px) {
+	header {
+		padding: 22px 4%;
+		transition: .2s;
+	}
+
+	header.sticky {
+		padding: 14px 4%;
+		transition: .2s;
+	}
+
+	section {
+		padding: 50px 4% 40px;
+		transition: .2s;
+	}
+
+	.container {
+		padding: 30px 4% 50px;
+	}
+}
+
+@media (max-width: 1180px) {
+	:root {
+		--big-font: 4rem;
+		--h2-font: 2.2rem;
+		--p-font: 15px
+	}
+
+	.home {
+		height: 85vh;
+	}
+}
+
+@media (max-width: 1060px) {
+	#menu-icon {
+		display: initial;
+	}
+
+	.navlist {
+		position: absolute;
+		top: -1000px;
+		left: 0;
+		right: 0;
+		display: flex;
+		flex-direction: column;
+		text-align: left;
+		background-color: var(--other-color);
+		transition: all .50s ease;
+	}
+
+	.navlist a {
+		display: block;
+		padding: 0.5rem;
+		margin: 1rem;
+		border-left: 2px solid var(--main-color);
+	}
+
+	.navlist.open {
+		top: 100%;
+	}
+}
